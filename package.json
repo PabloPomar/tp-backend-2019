@@ -1,0 +1,29 @@
+{
+  "name": "tp-backend-2019",
+  "version": "1.0.0",
+  "description": "Tp bakent ttads",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PabloPomar/tp-backend-2019.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PabloPomar/tp-backend-2019/issues"
+  },
+  "homepage": "https://github.com/PabloPomar/tp-backend-2019#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "jquery": "^3.4.1",
+    "mongoose": "^5.6.7",
+    "nodemon": "^1.19.1",
+    "sessionstorage": "^0.1.0"
+  }
+}
