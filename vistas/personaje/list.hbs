@@ -1,0 +1,29 @@
+<div style="background-color:white; padding: 25px;">
+    <h1>Elija a su personaje</h1>
+    <h3>Lista de personajes <a class="btn btn-secondary" href="/personaje"><i class="fa fa-plus"></i> Crear nuevo</a> </h3>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Profesion</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each list}}
+            <tr>
+                <td>{{this.nombre}}</td>
+                <td>{{this.edad}}</td>
+                <td>{{this.profesion}}</td>
+                <td>
+                    <a href="/pantalla/principal/{{this._id}}" onclick="return confirm('Seguro de que desea iniciar la aventura con este personaje?');"><i class="fa fa-address-book"></i></a>
+                    <a href="/personaje/detalle/{{this._id}}"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a>
+                    <a  href="/personaje/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                    <a href="/personaje/delete/{{this._id}}"  onclick="return confirm('Seguro de que desea borrar al personaje?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</div>
